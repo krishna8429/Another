@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="calculate.css">
+    <title>Workout Plan Generator</title>
+    <script src="scriptt.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color:#007bff;
+            font-size: 50px;
+        }
+
+        .result-container {
+            background-color: navajowhite;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0px auto;
+            max-width: 400px;
+        }
+
+        .result-text {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .calories {
+            font-size: 48px;
+            color: #FF5733;
+        }
+        h2 {
+            color:#007bff;
+            font-size: 25px;
+
+        }
+        .result-container {
+        background-color: navajowhite;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 0px auto; /* Adjusted margin value */
+        max-width: 400px;
+    }
+    </style>
+</head>
+<body>
+    <br><br>
+    <h1>Workout Plan By MAXFIT</h1>
+
+    <div class="result-container">
+        <h2>Calorie Calculator - Results</h2>
+        <p class="result-text">Your calculated daily calorie intake:</p>
+        <p class="calories" id="calories">Loading...</p>
+    </div>
+    <!-- <p>Your calculated daily calorie intake:</p> -->
+    <!-- <p id="calories">Calculating...</p> -->
+
+
+
+    <form id="goal-form">
+        <label for="goal" style="color: #007bff; font-size: 20px;">Select Your Goal:</label>
+
+        <!-- <label for="goal">Select Your Goal:</label> -->
+        <select id="goal" required>
+            <option value="weightloss">Muscle Building</option>
+            <option value="muscleBuilding">Weight Loss</option>
+            <option value="maintenance">Maintenance</option>
+        </select><br>
+        <a href="goal.html">
+        <button type="button" id="next">Generate</button>
+        </a>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const caloriesDisplay = document.getElementById("calories");
+            const storedCalories = sessionStorage.getItem("calories");
+
+            if (storedCalories) {
+                caloriesDisplay.textContent = storedCalories + " calories";
+            } else {
+                caloriesDisplay.textContent = "2400";
+            }
+        });
+    </script>
+</body>
+</html>
+
+         

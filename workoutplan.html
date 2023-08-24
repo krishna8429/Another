@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Workout Plan</title>
+    <style>
+        body {
+            background: url('both.jpg');
+            background-size: cover;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        .fat-loss {
+            background-color: #f44336; /* Red color */
+            color: white;
+        }
+
+        .muscle-building {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+        }
+        
+        .sunday {
+            background-color: #FFC107; /* Amber color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Here is your Workout Plan</h1>
+        <div class="workout-plan" id="workoutPlan">
+            <h2>Fat Loss Workout</h2>
+            <table class="fat-loss">
+                <tr>
+                    <th>Day</th>
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Squats , Bench Press, Lat-Pull downs</td>
+                    <td>3</td>
+                    <td>12-15</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Leg Press , Dumbell-Press , Shoulder-Press</td>
+                    <td>3</td>
+                    <td>10-12</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Cardio , Crunches , Leg Raises</td>
+                    <td>30 Min</td>
+                    <td>15-20</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Bicep-Curl , Tricep-Extension , Deadlift</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Cable-flys , T-Bar Rows , Lateral-Raises , Cardio</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Sit-Ups , Pull-Ups , Pec-Dec Flys</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr class="sunday">
+                    <td>Sunday (Rest Day)</td>
+                    <td colspan="3">Rest and Recover</td>
+                </tr>
+            </table>
+
+            <h2>Muscle Building Workout</h2>
+            <table class="muscle-building">
+                <tr>
+                    <th>Day</th>
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Bench Press , Sholder Press , Tricep-Extension</td>
+                    <td>4</td>
+                    <td>12-15</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Deadlifts , Lat-Pull Downs , Seated-Rows</td>
+                    <td>3</td>
+                    <td>6-8</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Squat , Leg-Press , Lunges , Core</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Lat-Pull Downs , Barbell-Rows , Shrugs</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Dumbell-Press , Lateral-Raises , Kickbacks</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Walking-Lunges , Crunches , Leg-Curls</td>
+                    <td>4</td>
+                    <td>10-12</td>
+                </tr>
+                <tr class="sunday">
+                    <td>Sunday (Rest Day)</td>
+                    <td colspan="3">Rest and Recover</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="workout.js"></script>
+</body>
+</html>
+
